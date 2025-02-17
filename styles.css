@@ -15,14 +15,14 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 350%;
     text-align: center;
     margin: 0;
     position: relative;
 }
 
 p {
-    font-size: 60%;
+    font-size: 70%;
     text-align: center;
     margin: 0.5% 0 0 0; 
     color: rgba(255, 255, 255, 0.659);
@@ -36,13 +36,13 @@ p {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px; 
-    max-width: 180px;
+    width: 140px;
+    max-width: 200px;
     background-color: white;
     color: black;
     text-align: left;
     border-radius: 1px;
-    padding: 8px;
+    padding: 10px;
     position: fixed;
     z-index: 1;
     opacity: 0;
@@ -50,7 +50,7 @@ p {
     pointer-events: none;
     transform: translateX(-100%);
     margin-left: -20px;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.4;
     white-space: normal;
     word-wrap: break-word;
@@ -65,16 +65,16 @@ p {
 
 @media (hover: hover) and (pointer: fine) {
     h1 {
-        font-size: 250%;
+        font-size: 300%;
     }
     p {
-        font-size: 50%;
+        font-size: 60%;
     }
     .tooltip .tooltiptext {
-        width: 100px;
-        max-width: 130px;
-        padding: 6px;
-        font-size: 10px;
+        width: 120px;
+        max-width: 150px;
+        padding: 8px;
+        font-size: 12px;
     }
 }
 
