@@ -1,0 +1,95 @@
+html {
+    cursor: crosshair;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+p {
+    font-size: 60%;
+    text-align: center;
+    margin: 0.5% 0 0 0; 
+    color: rgba(255, 255, 255, 0.659);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px; 
+    max-width: 180px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    border-radius: 1px;
+    padding: 8px;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+    transform: translateX(-100%);
+    margin-left: -20px;
+    font-size: 11px;
+    line-height: 1.4;
+    white-space: normal;
+    word-wrap: break-word;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    h1 {
+        font-size: 250%;
+    }
+    p {
+        font-size: 50%;
+    }
+    .tooltip .tooltiptext {
+        width: 100px;
+        max-width: 130px;
+        padding: 6px;
+        font-size: 10px;
+    }
+}
+
+@media (pointer: coarse) {
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .mobile-tooltip-active {
+        position: fixed !important;
+        left: 50% !important;
+        top: 30% !important;
+        transform: translate(-50%, 0) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
