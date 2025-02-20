@@ -1,1 +1,70 @@
-<!doctypehtml><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"name=viewport><title>arnab</title><link href=styles.css rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"rel=stylesheet media=print onload='this.media="all"'><script defer src=https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js></script><div class=blur-container aria-hidden=true><div class="blur-spot blur1"></div><div class="blur-spot blur2"></div><div class="blur-spot blur3"></div></div><div class=background aria-hidden=true id=particles-js></div><header><nav aria-label="Main navigation"role=navigation><div class=logo>arnab</div><ul class=nav-links role=menubar><li role=none><a class=nav-link href=#home role=menuitem>Home</a><li role=none><a class=nav-link href=#about role=menuitem>About</a><li role=none><a class=nav-link href=#connect role=menuitem>Socials</a></ul><div class=theme-switcher><input aria-label="Toggle between light and dark modes"id=theme-toggle type=checkbox> <label class=theme-label for=theme-toggle><span aria-hidden=true class=slider></span></label></div></nav></header><main><section class=hero id=home role=banner><h1 class=parallax-text tabindex=-1>Hello, I’m Arnab</h1><p class=tagline></section><section class=about id=about role=region aria-label="About Me"><div class=card data-tilt><h2>About Me</h2><p>I’m a 17 year old guy figuring things out, learning new skills<div class=fun-fact><button aria-label="Click to reveal a fun fact about me"id=fact-btn>Fun fact</button><p id=fact-text role=status>Click to know more about me.</div></div></section><section class=connect id=connect role=region aria-label="Contact Information"><h2>Socials</h2><div class=social-links><a class=social-btn href=https://discordapp.com/users/1018925744166023289 aria-label="My Discord profile"target=_blank>Discord</a> <a class=social-btn href=https://bsky.app/profile/arnab.is-not.cool aria-label="Visit my Bluesky profile"target=_blank>Bluesky</a> <a class=social-btn href=https://www.instagram.com/arr9ab/ aria-label=Instagram>Instagram</a></div></section></main><footer role=contentinfo><p>© 2025 Arnab.</footer><div class=cursor aria-hidden=true id=cursor></div><script defer src=script.js></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>arnab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+</head>
+<body>
+    <div class="blur-container" aria-hidden="true">
+        <div class="blur-spot blur1"></div>
+        <div class="blur-spot blur2"></div>
+        <div class="blur-spot blur3"></div>
+    </div>
+    <div id="particles-js" class="background" aria-hidden="true"></div>
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">arnab</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#connect" class="nav-link" role="menuitem">Socials</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle" aria-label="Toggle between light and dark modes">
+                <label for="theme-toggle" class="theme-label">
+                    <span class="slider" aria-hidden="true"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero" role="banner">
+            <h1 class="parallax-text" tabindex="-1">Hello, I’m Arnab</h1>
+            <p class="tagline"></p>
+        </section>
+
+        <section id="about" class="about" role="region" aria-label="About Me">
+            <div class="card" data-tilt>
+                <h2>About Me</h2>
+                <p>I’m a 17 year old guy figuring things out, learning new skills</p>
+                <div class="fun-fact">
+                    <button id="fact-btn" aria-label="Click to reveal a fun fact about me">Fun fact</button>
+                    <p id="fact-text" role="status">Click to know more about me.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect" class="connect" role="region" aria-label="Contact Information">
+            <h2>Socials</h2>
+            <div class="social-links">
+                <a href="https://discordapp.com/users/1018925744166023289" target="_blank" class="social-btn" aria-label="My Discord profile">Discord</a>
+                <a href="https://bsky.app/profile/arnab.is-not.cool" target="_blank" class="social-btn" aria-label="Visit my Bluesky profile">Bluesky</a>
+                <a href="https://www.instagram.com/arr9ab/" class="social-btn" aria-label="Instagram">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2025 Arnab.</p>
+    </footer>
+
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
