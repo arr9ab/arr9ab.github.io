@@ -132,6 +132,7 @@ hr{
 /* blog */
 .head{
     margin: 0;
+    padding-top: 10px;
 }
 .date {
     color: rgba(255, 255, 255, 0.538);
