@@ -1,10 +1,49 @@
 body {
     cursor: url('cursor.cur'), auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.958);
     color: white;
     font-family: 'Inter', sans-serif;
     margin: 0;
+    overflow: hidden;
+    position: relative;
 }
+
+/* background */
+.bg-design {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bg-design::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(153, 0, 255, 0.6), transparent);
+    filter: blur(200px);
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+    transform: translateX(-50%);
+}
+
+.bg-design::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(153, 0, 255, 0.4);
+    filter: blur(200px);
+    border-radius: 50%;
+    top: 50%;
+    left: 60%;
+}
+
 
 a, button{
     cursor: inherit;
@@ -18,7 +57,6 @@ a, button{
 .navbar {
     width: 18%;  
     padding-left: 20px;
-    background-color: black;
     min-width: 150px;  
     max-width: 220px;      
 }
@@ -26,7 +64,6 @@ a, button{
 .content {
     width: 85%;  
     padding-top: 70px;
-    border-left: 1px solid black;
 }
 
 p{
@@ -47,7 +84,7 @@ hr{
     margin: 0;
     width: 70%;
     border: none;
-    border-top: 1px dashed rgb(153, 0, 255);
+    border-top: 1px dashed #9900ff;
     height: 1px;
 }
 
