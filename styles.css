@@ -181,11 +181,6 @@ hr{
     font-size: 0.7rem;
 }
 
-.img-blog {
-    width: 40%;
-    height: auto;
-    
-}
 @media (max-width: 768px) {
     .crazy {
         max-width: 100%; 
