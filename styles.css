@@ -1,5 +1,7 @@
-body {            
+html{
     cursor: url('cursor.cur'), auto;
+}
+body {            
     background-color: black;
     color: #ffffffa0;
     margin: 0;
