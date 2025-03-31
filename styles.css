@@ -74,8 +74,3 @@ a.gb:hover{
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .box{
-        border: 0.1px solid #a600ff;
-       } 
-    }
