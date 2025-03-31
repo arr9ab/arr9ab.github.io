@@ -75,9 +75,7 @@ a.gb:hover{
 }
 
 @media (max-width: 768px) {
-    body{
-       .box{
+    .box{
         border: 0.1px solid #a600ff;
        } 
     }
-}
